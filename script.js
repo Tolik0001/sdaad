@@ -4,12 +4,32 @@ function randomInteger(min, max) {
     return Math.floor(rand);
   }
 let blocks = document.querySelectorAll(".block")
-let counter = 1
+let counter = 0
 let num = randomInteger(1,5)
 blocks.forEach(block=>{
-    counter++
     if(num == 0){
         num = randomInteger(1,5)
         block.innerHTML= "x"
+        let arr = []
+        arr.push(blocks[counter-1])
+        arr.push(blocks[counter+1])
+        arr.forEach(el =>{
+            if (el.innerHTML == 'x'){
+
+            }else{
+                el.innerHTML = '1'
+            }
+        })
+
     }else{num--}
+    block.addEventListener('click',function(e){
+        console.log('click');
+        block.style.backgroundColor = "red"
+    });
+    counter++
+
 })
+
+
+
+
