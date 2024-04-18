@@ -7,13 +7,13 @@
     color: green;
     text-align: center;
     font-size: 48px;
-    border: 1px solid green;
+    border: 2px solid green;
 }
 .normal{
     color: orange;
     text-align: center;
     font-size: 48px;
-    border: 1px solid orange;
+    border: 2px solid orange;
 }
 .hard{
     color: red;
@@ -29,26 +29,30 @@
 .timer{
     text-align: center;
     font-size: 50px;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 .pole{
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 300px;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 2px solid black;
     display: grid;
-    grid-template-columns: 10px 10px 10px 10px 10px 10px 10px 10px 10px 10px;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px 30px 30px 30px 30px;
     grid-template-rows: auto;
+    background-color: aliceblue;
 }
 .block{
-    height: 10px;
-    width: 10px;
+    height: 30px;
+    width: 30px;
     border: 1px solid black;
     margin: 0px;
-    font-size: 10px;
+    font-size: 30px;
     text-align: center;
 }
 .block:hover{
     cursor: pointer;
     background-color: gray;
+}
+body{
+    background-image: url('https://bylinetimes.com/wp-content/uploads/2019/04/PA-31284529-1308x872.jpg');
 }
